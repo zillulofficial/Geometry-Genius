@@ -27,14 +27,14 @@
             <!-- card part -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- card 01 -->
-                <div class="card card-compact w-96 h-[540px] p-12 bg-base-100 shadow-md text-center">
+                <div class="card card-compact w-96 p-12 bg-base-100 shadow-md text-center">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="font-bold text-2xl text-center mt-12">Triangle</h2>
                         <p class="font-normal text-lg mb-12">Area (A) = 0.5 X b X h</p>
                         <div class="flex items-center">
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="h"><span class="mr-3">cm</span>
+                            <input id="triangle-base" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
+                            <input id="triangle-height" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="h"><span class="mr-3">cm</span>
                         </div>
                         <div class="card-actions">
                             <button onclick="triangleBtn()"
@@ -43,14 +43,14 @@
                     </div>
                 </div>
                 <!-- card 02 -->
-                <div class="card card-compact w-96 h-[540px] p-12 bg-base-100 shadow-md text-center">
+                <div class="card card-compact w-96 p-12 bg-base-100 shadow-md text-center">
                     <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="font-bold text-2xl text-center mt-12">Rectangle</h2>
                         <p class="font-normal text-lg mb-12">Area (A) = w X l</p>
                         <div class="flex items-center">
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="w"><span class="mr-3">cm</span>
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="l"><span class="mr-3">cm</span>
+                            <input id="rectangle-width" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="w"><span class="mr-3">cm</span>
+                            <input id="rectangle-length" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="l"><span class="mr-3">cm</span>
                         </div>
                         <div class="card-actions">
                             <button onclick="rectangleBtn()"
@@ -59,14 +59,14 @@
                     </div>
                 </div>
                 <!-- card 03 -->
-                <div class="card card-compact w-96 h-[540px] p-12 bg-base-100 shadow-md text-center">
+                <div class="card card-compact w-96 p-12 bg-base-100 shadow-md text-center">
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="font-bold text-2xl text-center mt-12">Parallelogram</h2>
                         <p class="font-normal text-lg mb-12">Area (A) = b X h</p>
                         <div class="flex items-center">
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="h"><span class="mr-3">cm</span>
+                            <input id="parallelogram-base" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
+                            <input id="parallelogram-height" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="h"><span class="mr-3">cm</span>
                         </div>
                         <div class="card-actions">
                             <button onclick="parallelogramBtn()"
@@ -75,14 +75,14 @@
                     </div>
                 </div>
                 <!-- card 04 -->
-                <div class="card card-compact w-96 h-[540px] p-12 bg-base-100 shadow-md text-center">
+                <div class="card card-compact w-96 p-12 bg-base-100 shadow-md text-center">
                     <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="font-bold text-2xl text-center mt-12">Rhombus</h2>
                         <p class="font-normal text-lg mb-12">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                         <div class="flex items-center">
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="d1"><span class="mr-3">cm</span>
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="d2"><span class="mr-3">cm</span>
+                            <input id="rhombus-d1" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="d1"><span class="mr-3">cm</span>
+                            <input id="rhombus-d2" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="d2"><span class="mr-3">cm</span>
                         </div>
                         <div class="card-actions">
                             <button onclick="rhombusBtn()"
@@ -91,14 +91,14 @@
                     </div>
                 </div>
                 <!-- card 05 -->
-                <div class="card card-compact w-96 h-[540px] p-12 bg-base-100 shadow-md text-center">
+                <div class="card card-compact w-96 p-12 bg-base-100 shadow-md text-center">
                     <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="font-bold text-2xl text-center mt-12">Pentagon</h2>
                         <p class="font-normal text-lg mb-12">Area (A) = 0.5 X p X b</p>
                         <div class="flex items-center">
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="p"><span class="mr-3">cm</span>
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
+                            <input id="pentagon-p" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="p"><span class="mr-3">cm</span>
+                            <input id="pentagon-b" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
                         </div>
                         <div class="card-actions">
                             <button onclick="pentagonBtn()"
@@ -107,14 +107,14 @@
                     </div>
                 </div>
                 <!-- card 06 -->
-                <div class="card card-compact w-96 h-[540px] p-12 bg-base-100 shadow-md text-center">
+                <div class="card card-compact w-96 p-12 bg-base-100 shadow-md text-center">
                     <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="font-bold text-2xl text-center mt-12">Ellipse</h2>
                         <p class="font-normal text-lg mb-12">Area (A) = pi X a X b</p>
                         <div class="flex items-center">
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="a"><span class="mr-3">cm</span>
-                            <input class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
+                            <input id="ellipse-a" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="a"><span class="mr-3">cm</span>
+                            <input id="ellipse-b" class="bg-[#F1F1F1] pl-3 w-24 mr-3 h-8 text-[#111111cc] rounded"  type="text" placeholder="b"><span class="mr-3">cm</span>
                         </div>
                         <div class="card-actions">
                             <button onclick="ellipseBtn()"
